@@ -1,0 +1,213 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*------------------------------------------------end reset sheet------------------------------------*/
+/*--------my code begins--------*/
+/*---------------index elements-------------*/
+.index-header{
+    background-image:url(../img/musicvideo2.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    padding:auto;    
+}
+
+.header-logo-title{
+    width:420px;
+    margin:10px 5%;
+    float:left;
+}
+.header-logo-title img{
+    border:1px solid white;
+    border-radius:25%;
+    float:left;
+}
+.header-logo-title h1{
+    color:white;
+    float:right;
+    font-size:45px;
+    margin:3% auto;
+}
+
+.header-nav{
+    width:400px;
+    float:right;
+    margin:2% 10%;
+}
+
+.header-nav a{
+    color:white;
+    font-size:26px;
+    margin:20px;
+}
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------------------Body----------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+
+.index-white-article{
+    background-color:white;
+    width:100%;
+    height:400px;
+    padding:30px;
+}
+
+.article-wrapper{
+    width:960px;
+    margin:auto;
+    padding:10px 0px;    
+}
+
+
+
+/*-------------------------------------------------------------------------------*/
+/*---------------------------------------------Footer----------------------------*/
+/*-------------------------------------------------------------------------------*/
+footer{
+    width:100%;    
+    background-color:#888888;
+    padding:30px 0px;
+}
+
+.footer-nav{
+    width:960px;
+    margin: auto;
+}
+
+.footer-nav table{
+    width:100%;
+}
+
+.footer-nav table th{
+    color:white;
+    text-align:left;
+}
+
+.footer-nav table td{
+    color:white;
+    text-align:left;  
+    vertical-align:center;
+}
+
+.footer-nav table td ul li{
+    list-style:none;
+}
+
+.copyright{
+    width:100%;
+    color:white;
+    text-align:center;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------------------Misc----------------------------*/
+/*-------------------------------------------------------------------------------*/
+a{
+    text-decoration:none;
+}
+
+.clear{
+    clear:both;
+    line-height:0;
+}
