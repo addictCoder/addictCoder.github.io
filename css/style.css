@@ -198,8 +198,37 @@ input, select {
 .index-white-article{
     background-color:white;
     width:100%;
-    height:500px;
-    padding:30px 0px;
+    padding:5% 0;
+}
+
+.blog-container{
+    width:70%;
+    margin:auto;
+}
+
+.blog-wrapper{
+    width:70%;
+    float:left;    
+}
+
+.blog-sidebar{
+    text-align:center;
+    width:20%;
+    float:right;    
+    border-left: 1px solid steelblue;
+    border-left-width:thin;
+}
+
+.sidebar-topic{
+    width:100%;
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
+.sidebar-topic:hover{
+    font-weight:bold;
+    text-decoration-color:steelblue;
+    color:steelblue;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -245,6 +274,25 @@ input, select {
     color:white;
 }
 
+.tamara{
+    color:white;
+    text-decoration:underline;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------------About-Body----------------------------*/
+/*-------------------------------------------------------------------------------*/
+.contact-white-article{
+    background-color:white;
+    width:100%;
+    padding:5% 0;
+}
+
+.contact-article-wrapper{
+    width:70%;
+    margin:auto;
+    padding:50px;
+}
 
 /*-------------------------------------------------------------------------------*/
 /*---------------------------------------------Footer----------------------------*/
