@@ -174,7 +174,7 @@ input, select {
 }
 
 .article-wrapper{
-    width:90%px;
+    width:90%;
     margin:0 auto;
     padding:0px;
     text-align:center;    
@@ -209,12 +209,13 @@ input, select {
 footer{
     width:100%;    
     background-color:#888888;
-    padding:30px 0px;
+    padding:30px 0;
+    margin-bottom:50px;
 }
 
 .footer-nav{
-    width:960px;
-    margin: auto;
+    width:80%;
+    margin:auto;
 }
 
 .footer-nav table{
@@ -233,6 +234,7 @@ footer{
 }
 
 .footer-nav table td ul li{
+    width:100%;
     list-style:none;
 }
 
