@@ -220,15 +220,15 @@ input, select {
 }
 
 .sidebar-topic{
-    width:100%;
-    text-decoration:underline;
-    text-decoration-color:white;
+    width:100%;   
+    margin:10px 0;
 }
 
 .sidebar-topic:hover{
     font-weight:bold;
+    text-decoration:underline;
     text-decoration-color:steelblue;
-    color:steelblue;
+    color:steelblue;    
 }
 
 .post-image-snip {
@@ -263,6 +263,7 @@ input, select {
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+    margin-bottom:150px;
 }
 
 .about-article-wrapper{
@@ -368,4 +369,13 @@ a{
 .clear{
     clear:both;
     line-height:0;
+}
+
+.back-button{
+    color:white;
+    background-color:steelblue;
+    border:1px solid steelblue;
+    margin:10px 0px;
+    width:160px;
+    height:30px;
 }

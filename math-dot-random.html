@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>The addictCoder;</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+    <body class="index-body">
+        <header class="index-header">
+            <div class="header-logo-title">
+                <a href="/">
+                    <img src="img/headerLogo2.png">
+                    <h1>The addictCoder;</h1>
+                    <br class="clear"/>
+                </a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <a href="/">home</a>
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+            <br class="clear"/>
+        </header>
+        
+        
+        <article class="about-picture-article">
+            <div class="about-article-wrapper">  
+                               
+            </div>
+        </article>
+        
+        
+        <article class="contact-white-article">
+            <div class="contact-article-wrapper">
+                <h1 class="post-page-header">Random Numbers with Math.random()</h1>
+                <p class="date-paragraph">Friday, July 29th, 2017 03:07 - PST</p>
+                <p>
+                    Let's assume you're making a game and in that game, you've created many weapons for the player to use. Each weapon 
+                    has a minimum and maximum damage value. Lets say it's the "Holy Club of Stupidity" with a +5 to rock throwing skill(HCoS).
+                    The HCoS has a minimum damage value of 5 and a maximum damage value of 20. How would we determine the amount of damage inflicted to an enemy character? Well, in case you didn't read the title of this post, Math.random().<br/>
+                    <br/>
+                    What is Math.random()? First, divide it at the 'dot' operator into Math and .random(). Let's take a look at Math.
+                    Math is a class that is declared final. "public final class Math" This means Math is a class that cannot be subclassed.
+                    The other side, .random(), is a static method. Meaning this method cannot be overridden nor does the class need to be instantiated to call the method. So none of the "Math m = new Math();  m.random();". So what does all this do and how will
+                    this be good for the weapons of your awesome game?<br/>
+                    <br/>
+                    The .random() method returns a double between 0.0(inclusive) and 1.0(exclusive). However, this doesn't cover the full range of weapons min and max damage values. So we need to create a formula to generate the random damage value between the min and max values. It will look something like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/mathdotran1.PNG"><br/>
+                    <br/>
+                    So what did we do here? We take the min value of 5 and added (Math.random() * 16) to it. Being that .random() returns a value of 0.0 through 1.0(exclusive), then multiplied by 16, we get a random number between 0.0 and 15.99. We want to cast that value to an int by putting (int) before the (Math.random() * 16). This takes the random value and removes the fractional part of the double. So now we have a whole number between 0 and 15. Finally adding 5 to this value leaves us with a random number between 5 and 20.<br/>
+                    <br/>
+                    Getting back to the awesome game you're hypothetically making. We are going to want to execute that line of code in a method, most likely a method called attack(). The only problem is, no matter what weapon is equiped, the attack() will only return a value between 5 and 20. What if we find The Haircomb of Ultimate Doom and its damage is between 50 and 200!? We'll have to make a quick modification to the attack() that we haven't coded yet. The best way to return a random number between any given minimum value and maximum value, will look something like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/mathdotran2.PNG"><br/>
+                    <br/>
+                    I hope this helps you understand Math.random() a little bit more.
+                </p>                
+                <p>Copy and past won't help you. You should type out the code above.</p>
+                <button onclick="goBack()" class="back-button">Go Back</button>
+            </div>
+        </article>  
+        
+        
+        <footer>
+            <div class="footer-nav">
+                <table>
+                    <th>Navigation</th>
+                    <th>Contact</th>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>6448 Bannock Way<br/>
+                                Las Vegas, NV 89107<br/>
+                                (702) 330-1487<br/>
+                                addictCoderCS@gmail.com
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/david-cash-9471b5115" target="_blank">
+                                <img src="img/linkedin-logo.png" alt="LinkedIn Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="https://plus.google.com/103340743965951253515" target="_blank">
+                                <img src="img/google-plus-logo.png" alt="Google+ Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="http://steamcommunity.com/id/addictCoder" target="_blank">
+                                <img src="img/steam-logo.png" alt="Steam Profile" width="50">
+                            </a>                            
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p class="copyright">&copy; 2030 The addictCoder - Designed by David Cash</p>
+            </div>
+        </footer>
+    </body>
+</html>
