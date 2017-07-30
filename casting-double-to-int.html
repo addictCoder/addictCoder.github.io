@@ -42,17 +42,18 @@
         
         <article class="contact-white-article">
             <div class="contact-article-wrapper">
-                <h1 class="post-page-header">swith vs if/else</h1>
-                <p class="date-paragraph">Friday, July 28th, 2017 16:52 - PST</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor gravida lorem ac elementum. Sed ut aliquam sem, vel ultricies odio. Maecenas porttitor metus lectus, a mattis quam egestas a. Curabitur velit nibh, eleifend ac ullamcorper et, vehicula ac neque. Nulla eu vehicula turpis, in tristique libero. Duis ante felis, imperdiet vitae nisl ut, dapibus imperdiet odio. Mauris neque justo, malesuada et turpis in, blandit tincidunt elit.<br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor gravida lorem ac elementum. Sed ut aliquam sem, vel ultricies odio. Maecenas porttitor metus lectus, a mattis quam egestas a. Curabitur velit nibh, eleifend ac ullamcorper et, vehicula ac neque. Nulla eu vehicula turpis, in tristique libero. Duis ante felis, imperdiet vitae nisl ut, dapibus imperdiet odio. Mauris neque justo, malesuada et turpis in, blandit tincidunt elit.<br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor gravida lorem ac elementum. Sed ut aliquam sem, vel ultricies odio. Maecenas porttitor metus lectus, a mattis quam egestas a. Curabitur velit nibh, eleifend ac ullamcorper et, vehicula ac neque. Nulla eu vehicula turpis, in tristique libero. Duis ante felis, imperdiet vitae nisl ut, dapibus imperdiet odio. Mauris neque justo, malesuada et turpis in, blandit tincidunt elit.<br/>
-                <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor gravida lorem ac elementum. Sed ut aliquam sem, vel ultricies odio. Maecenas porttitor metus lectus, a mattis quam egestas a. Curabitur velit nibh, eleifend ac ullamcorper et, vehicula ac neque. Nulla eu vehicula turpis, in tristique libero. Duis ante felis, imperdiet vitae nisl ut, dapibus imperdiet odio. Mauris neque justo, malesuada et turpis in, blandit tincidunt elit.
+                <h1 class="post-title-snip">Casting double to int</h1>
+                <p class="date-paragraph">Friday, July 30th, 2017 04:08 - PST</p>
+                <p>
+                    If we go back in time, you were hypothetically creating a super awesome game. I had so generously helped you write your attack() method and you were very appreciative. You're welcome. Anyway, I wanted to talk about something that was in the attack() method that may not have made sense to you at the moment. I want to clear this up. Do you remember seeing...<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/castDtoI1.PNG"><br/>
+                    <br/>
+                    That, my friend is called casting. The reason we have to do this in the attack() method is because Math.random() returns a <strong>double</strong>. However, the variable '<strong>damage</strong>' is an <strong>int</strong>. In order to store the value in damage, we cast (Math.random() * ((max - min) + 1)) into an int by placing (int) before it. What this does, pretty much, is just remove the fractional part of the double. No it doesn not round it up. If the double is 14.99999999999, casting it to an int will make it 14. <br/>
+                    <br/>
+                    <strong>WARNING:</strong>This cannot be done with a Double. Notice the capital 'D'. Although, Double does have a .intValue() method... but that's for a different post. Now get out there and start casting, you int mage.<br/>
+                    <br/>                    
                 </p>
-                <img src="http://via.placeholder.com/300x200" style="margin:20px auto;">
                 <p>Copy and past won't help you. You should type out the code above.</p>
                 <button onclick="goBack()" class="back-button">Go Back</button>
             </div>
