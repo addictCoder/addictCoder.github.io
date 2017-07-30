@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>The addictCoder;</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+    <body class="index-body">
+        <header class="index-header">
+            <div class="header-logo-title">
+                <a href="/">
+                    <img src="img/headerLogo2.png">
+                    <h1>The addictCoder;</h1>
+                    <br class="clear"/>
+                </a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <a href="/">home</a>
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+            <br class="clear"/>
+        </header>
+        
+        
+        <article class="about-picture-article">
+            <div class="about-article-wrapper">  
+                               
+            </div>
+        </article>
+        
+        
+        <article class="contact-white-article">
+            <div class="contact-article-wrapper">
+                <h1 class="post-title-snip">= vs == vs .equals()</h1>
+                <p class="date-paragraph">Friday, July 29th, 2017 18:36 - PST</p>
+                <p>
+                    Going through school, you've seen '=' a lot. Usually in  an algebra equation like, y = (5 + 4) &divide; 3. Luckily for us programmers, it hasn't changed! The '=' is an assignment operator. If we took that algebra equation and put it into our script, we would write <strong>int y = (5 + 4) / 3;</strong> or because we're smart and we can do that equation in our head, we would write <strong>int y = 3;</strong>. What the '=' operator tells the compiler is "this variable is equal to this value."<br/>
+                    <br/>
+                    Next we have a funny looking thing, '=='. This is a relational operator. This compares two variables or a variable and a constant. This is normally used in an if/else statement, or while loops. It returns a true or false value. So if we had <strong>int y = 3;</strong> and <strong>int x = 3;</strong>. Then, in an if/else statement we wrote <strong>if (y == x)</strong> the value would return true because y and x are both equal.<br/>
+                    <br/>
+                    Great so now you have written out this incredible login script for your super awesome video game. You have something like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/theEquals1.PNG"><br/>
+                    <br/>
+                    The problem is, no matter how many times you try to login, you always end up with "No player by that username here." This is because we are now comparing Strings. The '==' on lines 26 and 27 will always return false. "THEN HOW DO MY PLAYERS LOG IN!?!?!" you might be yelling. Well, there's this really neat thing called .equals()! Pronounced "Dot Equals," this little tool helps us to compare user input in the form of strings to other string variable. Take notice of the changes on line 26 and 27 to see how we would compare the two strings. Your players can now login successfully.
+                    <br/>
+                    <img class="inline-post-image" src="img/theEquals2.PNG"><br/>
+                    <br/>
+                </p>
+                <p>Copy and past won't help you. You should type out the code above.</p>
+                <button onclick="goBack()" class="back-button">Go Back</button>
+            </div>
+        </article>  
+        
+        
+        <footer>
+            <div class="footer-nav">
+                <table>
+                    <th>Navigation</th>
+                    <th>Contact</th>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>6448 Bannock Way<br/>
+                                Las Vegas, NV 89107<br/>
+                                (702) 330-1487<br/>
+                                addictCoderCS@gmail.com
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/david-cash-9471b5115" target="_blank">
+                                <img src="img/linkedin-logo.png" alt="LinkedIn Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="https://plus.google.com/103340743965951253515" target="_blank">
+                                <img src="img/google-plus-logo.png" alt="Google+ Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="http://steamcommunity.com/id/addictCoder" target="_blank">
+                                <img src="img/steam-logo.png" alt="Steam Profile" width="50">
+                            </a>                            
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p class="copyright">&copy; 2030 The addictCoder - Designed by David Cash</p>
+            </div>
+        </footer>
+    </body>
+</html>

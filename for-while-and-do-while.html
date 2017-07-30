@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>The addictCoder;</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+    <body class="index-body">
+        <header class="index-header">
+            <div class="header-logo-title">
+                <a href="/">
+                    <img src="img/headerLogo2.png">
+                    <h1>The addictCoder;</h1>
+                    <br class="clear"/>
+                </a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <a href="/">home</a>
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+            <br class="clear"/>
+        </header>
+        
+        
+        <article class="about-picture-article">
+            <div class="about-article-wrapper">  
+                               
+            </div>
+        </article>
+        
+        
+        <article class="contact-white-article">
+            <div class="contact-article-wrapper">
+                <h1 class="post-title-snip">For, While and Do While.</h1>
+                <p class="date-paragraph">Friday, July 29th, 2017 14:38 - PST</p>
+                <p>
+                    Have you ever built a super-sweet HotWheels&trade; track and wanted to give it a run for every car you have? Have you
+                    ever played your favorite game at the arcade until you ran out of quarters? Have you ever attempted a new trick on your skateboard until you landed it? Well java has too! Well, sort of. With Java, if we want an action to repeat itself a given number of times, we use loops.<br/>
+                    <br/>
+                    We would use for-loop, while-loop and do-while-loop to complete the examples above. FOR every HotWheel&trade; car you have, run it on the track. WHILE you have quaters, play your favorite arcarde game. DO(attempt) new skateboard trick, until you land it. WHILE you haven't landed the trick. Let's look at all of these one by one.<br/>
+                    <br/>
+                    <strong>For Loop:</strong><br/>                   
+                    The for loop has four parts. The init, test or condition, increment, and the body or scope. The init will rune once at the beginning of the loop. It declares a varialbe and it's value. This variable will be used for counting. The test, or condition, compares the init variable to another value using an operator (i.e. &lt;, &gt;, ==). This will return a true or false value. If true, the loop will run again. The increment increases the value of the init variable, usually by one. So when the loop runs again, the test will compare the init variable with its new value the the other value. Last is the body, or scope. This is the code that will run everytime the test returns a value of true. Lets take a look. <br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-for1.PNG"><br/>
+                    <br/>
+                    This should help you understand the structure of a for loop. Now lets change this code to work for our HotWheels&trade; example. First we need to set the init. Now in programming, we know that we always start form zero when counting. Setting up our init should be the same. So we declare a variable and give it a value, <strong>int i = 0</strong> Then we separate that from the other three with a semicolon, <strong>;</strong>. Next, let's say we have 20 cars. So we would want to run this loop for every car. The test needs to compare the value of i to how many cars we have. <strong>i &lt; 20;</strong> Also followed by a semicolon. Next, while i is less than the number of cars we have, we need to increas the value of i. <strong>i++</strong> Now for the body, let's assume we already created a method to run the track on the car. We'll call the method, <strong>raceCar();</strong>. If we put all of our piece together, our for loop will look like this.<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-for2.PNG"><br/>
+                    <br/>
+                    <br/>
+                    <strong>While Loop:</strong><br/>
+                    A while loop only has two parts, a condition and a scope. The condition returns a true or false value, and the the code in the scope will continue to run while the condition is true. The condition is usually a boolean variable, but can be populated with an operator comparing two variables. However, for our example, we are going to use a boolean. The while loop structure will look something like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-while1.PNG"><br/>
+                    <br/>
+                    For our arcade example, we are playing a game while we have quarters to play the game. So our boolean can be called <strong>hasQuaters</strong>. We place our boolean in the condition spot. Next we need to write our code that executes while we still have quarters. Let's assume we have an <strong>int</strong> called <strong>quaters</strong> and a method called <strong>playGame();</strong>. Every time we want to play the game it costs a quarter, so we lose one quater by writing <strong>quater--;</strong>. Then we play the game. After the game is done, we need to make sure we have enough quaters to play again. For this, let's use an if/else statement. So <strong>if (quaters > 0)</strong> is true, we set <strong>hasQuaters = true;</strong>. Otherwise, or <strong>else</strong>, we set <strong>hasQuaters = false;</strong>. When the condition returns false, we can no longer execute the code withing the scope of the loop. Our while loop will look like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-while2.PNG"><br/>
+                    <br/>
+                    <br/>
+                    <strong>Do While Loop:</strong><br/>
+                    The Do While loop is very similar to the While loop. It has a condition, and it has a scope. However, in our while loop example, if we never had quaters, the code in the scope would never execute. With a Do-While, the code in the scope runs at least once and then continues to run while the condition is true. Here is how a Do-While loop is structured: <br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-do1.PNG"><br/>
+                    <br/>
+                    So for our skateboard example. We want to learn a new trick, and we are going to attempt the trick at least once. So we have a <strong>public boolean attemptTrick();</strong> which will return a true or false letting us know if we landed it or not. We also have a boolean that is set to false called <strong>landedTrick</strong>. This can only be set to true once the trick is landed. So our do-while will look something like this:<br/>
+                    <br/>
+                    <img class="inline-post-image" src="img/fwdw-do2.PNG"><br/>
+                    <br/>
+                </p>                
+                <p>Copy and past won't help you. You should type out the code above.</p>
+                <button onclick="goBack()" class="back-button">Go Back</button>
+            </div>
+        </article>  
+        
+        
+        <footer>
+            <div class="footer-nav">
+                <table>
+                    <th>Navigation</th>
+                    <th>Contact</th>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>6448 Bannock Way<br/>
+                                Las Vegas, NV 89107<br/>
+                                (702) 330-1487<br/>
+                                addictCoderCS@gmail.com
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/david-cash-9471b5115" target="_blank">
+                                <img src="img/linkedin-logo.png" alt="LinkedIn Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="https://plus.google.com/103340743965951253515" target="_blank">
+                                <img src="img/google-plus-logo.png" alt="Google+ Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="http://steamcommunity.com/id/addictCoder" target="_blank">
+                                <img src="img/steam-logo.png" alt="Steam Profile" width="50">
+                            </a>                            
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p class="copyright">&copy; 2030 The addictCoder - Designed by David Cash</p>
+            </div>
+        </footer>
+    </body>
+</html>
