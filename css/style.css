@@ -318,6 +318,27 @@ input, select {
     padding:50px;
 }
 
+.form-box{
+    width:50%;
+    float:left;
+}
+
+.form-field{
+    width:90%;
+    height:30px;
+    padding-left:10px;
+    margin:10px;
+    font-size:15px;
+}
+.message-field{
+    width:90%;
+    height:300px;
+    padding-left:10px;
+    margin:10px;
+    font-size:15px;
+    resize:vertical;
+}
+
 /*-------------------------------------------------------------------------------*/
 /*---------------------------------------------Footer----------------------------*/
 /*-------------------------------------------------------------------------------*/
