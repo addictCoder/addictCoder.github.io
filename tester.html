@@ -4,10 +4,28 @@
 		<title>Using Pym.js for responsive iframe</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
         <!-- include jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	</head>
 	<body>
+        <header class="index-header">
+            <div class="header-logo-title">
+                <a href="/">
+                    <img src="img/headerLogo2.png">
+                    <h1>The addictCoder;</h1>
+                    <br class="clear"/>
+                </a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <a href="/">home</a>
+                    <a href="about.html">about</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+            <br class="clear"/>
+        </header>
 		<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.js"></script>
 		<div id="embed-1">
 
@@ -15,5 +33,46 @@
 		<script type="text/javascript">
 			new pym.Parent("embed-1", "https://faizaakhtar.github.io/interactive/iframe.html");
 		</script>
+        <footer>
+            <div class="footer-nav">
+                <table>
+                    <th>Navigation</th>
+                    <th>Contact</th>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li><a href="tester.html">Tester</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>6448 Bannock Way<br/>
+                                Las Vegas, NV 89107<br/>
+                                (702) 330-1487<br/>
+                                addictCoderCS@gmail.com
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/david-cash-9471b5115" target="_blank">
+                                <img src="img/linkedin-logo.png" alt="LinkedIn Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="https://plus.google.com/103340743965951253515" target="_blank">
+                                <img src="img/google-plus-logo.png" alt="Google+ Profile" width="50">
+                            </a>                            
+                        </td>
+                        <td>
+                            <a href="http://steamcommunity.com/id/addictCoder" target="_blank">
+                                <img src="img/steam-logo.png" alt="Steam Profile" width="50">
+                            </a>                            
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p class="copyright">&copy; 2030 The addictCoder - Designed by David Cash</p>
+            </div>
+        </footer>
 	</body>
 </html>
